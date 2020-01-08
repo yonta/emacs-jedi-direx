@@ -176,7 +176,6 @@
 (defun jedi-direx:setup ()
   "Add it to `jedi-mode-hook' to use jedi-direx."
   (when jedi-mode
-    (add-hook 'after-change-functions 'jedi:after-change-handler nil t)
     (jedi:defined-names-deferred)))
 
 (provide 'jedi-direx)
